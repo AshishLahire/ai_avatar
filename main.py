@@ -1,31 +1,27 @@
-from scraper.youtube_scraper import scrape_youtube_titles
-from script.script_generator import generate_script
-from voice.elevenlabs_voice import generate_voice
-from video.heygen_video import create_video, check_status, download_video
+# main.py
+
+import os
+
+from youtube import get_video_title
+from script import generate_script
+from voice import generate_voice
+from video import create_video, wait_for_video
 
 
-def run_pipeline():
+def run():
 
-    print("Step 1: Scraping YouTube titles...")
-    titles = scrape_youtube_titles()
+    os.makedirs("outputs", exist_ok=True)
 
-    print("Step 2: Generating script...")
-    script = generate_script(titles)
+    title = get_video_title()
 
-    print(script)
+    script = generate_script(title)
 
-    print("Step 3: Generating voice...")
     generate_voice(script)
 
-    print("Step 4: Creating HeyGen avatar video...")
     video_id = create_video(script)
 
-    print("Step 5: Checking video status...")
-    video_url = check_status(video_id)
-
-    print("Step 6: Downloading final video...")
-    download_video(video_url)
+    wait_for_video(video_id)
 
 
 if __name__ == "__main__":
-    run_pipeline()
+    run()

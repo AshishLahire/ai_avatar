@@ -1,0 +1,54 @@
+# Python cache
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+
+# Environment variables (API keys)
+
+.env
+
+# Output files
+
+<!-- outputs/
+*.mp3
+*.mp4
+*.wav -->
+
+# Logs
+
+*.log
+
+# IDE files
+
+.vscode/
+.idea/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+
+.ipynb_checkpoints/
+
+# Build files
+
+build/
+dist/
+*.egg-info/
+
+__pycache__/
+.env
+outputs/
+*.mp3
+*.mp4
+venv/

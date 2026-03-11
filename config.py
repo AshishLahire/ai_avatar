@@ -1,9 +1,16 @@
-ELEVENLABS_API_KEY = "YOUR_ELEVENLABS_API_KEY"
-HEYGEN_API_KEY = "YOUR_HEYGEN_API_KEY"
+# config.py
+# central place for API keys and configs
 
-VOICE_ID = "vghiSqG5ezdhd8F3tKAD"  # ElevenLabs default voice
+import os
+from dotenv import load_dotenv
 
-AVATAR_ID = "fd76560267c24596a7b3fe2e4cc51662"
+load_dotenv()
 
-OUTPUT_AUDIO = "outputs/voice.mp3"
-OUTPUT_VIDEO = "outputs/final_video.mp4"
+HEYGEN_API_KEY = os.getenv("HEYGEN_API_KEY")
+ELEVEN_API_KEY = os.getenv("ELEVEN_API_KEY")
+
+# default avatar
+AVATAR_ID = "anna_public"
+
+# output path
+VOICE_FILE = "outputs/voice.mp3"
