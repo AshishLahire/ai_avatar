@@ -17,10 +17,15 @@ Even if the video generation fails (for example due to insufficient credits), th
 ## Project Workflow
 
 The pipeline runs in the following sequence:
+
 Step 1 → Generate YouTube Idea
+
 Step 2 → Generate Script
+
 Step 3 → Generate Voice
+
 Step 4 → Request Avatar Video (HeyGen API)
+
 Step 5 → Check Video Status
 
 
@@ -46,3 +51,4 @@ Video status: waiting
 Video status: failed
 
 Reason: Insufficient HeyGen credits
+
