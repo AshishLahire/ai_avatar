@@ -8,7 +8,7 @@
 # Virtual environments
 
 venv/
-env/
+.env/
 .venv/
 
 # Environment variables (API keys)
