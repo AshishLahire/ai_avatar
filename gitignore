@@ -1,6 +1,7 @@
 # Python cache
 
 **pycache**/
+_pycache_/
 *.pyc
 *.pyo
 *.pyd
@@ -8,7 +9,6 @@
 # Virtual environments
 
 venv/
-.env/
 .venv/
 
 # Environment variables (API keys)

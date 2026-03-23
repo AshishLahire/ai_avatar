@@ -1,5 +1,3 @@
-# main.py
-
 import os
 
 from youtube import get_video_title

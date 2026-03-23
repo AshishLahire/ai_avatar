@@ -6,11 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-HEYGEN_API_KEY = os.getenv("HEYGEN_API_KEY")
+# API keys loaded from .env
+DID_API_KEY = os.getenv("DID_API_KEY")
 ELEVEN_API_KEY = os.getenv("ELEVEN_API_KEY")
 
-# default avatar
-AVATAR_ID = "anna_public"
-
-# output path
+# Output path
 VOICE_FILE = "outputs/voice.mp3"

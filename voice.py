@@ -17,7 +17,7 @@ def generate_voice(script):
 
     payload = {
         "text": script,
-        "model_id": "eleven_turbo_v2"   # fixed model
+        "model_id": "eleven_turbo_v2"
     }
 
     try:
@@ -38,4 +38,3 @@ def generate_voice(script):
     print("Saved to:", config.VOICE_FILE)
 
     return config.VOICE_FILE
-   
