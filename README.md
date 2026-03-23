@@ -7,7 +7,7 @@ The system performs the following steps automatically:
 1. Generate a YouTube video idea
 2. Generate a motivational script
 3. Convert the script to voice
-4. Send the script to Heygen to generate an avatar video
+4. Send the script to HeyGen to generate an avatar video
 5. Check the video generation status and print the final result
 
 Even if the video generation fails (for example due to insufficient credits), the system continues execution and shows the reason for failure.
