@@ -1,7 +1,7 @@
 # Python cache
 
 **pycache**/
-_pycache_/
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
@@ -16,11 +16,6 @@ venv/
 .env
 
 # Output files
-
-<!-- outputs/
-*.mp3
-*.mp4
-*.wav -->
 
 # Logs
 
@@ -46,9 +41,4 @@ build/
 dist/
 *.egg-info/
 
-__pycache__/
-.env
-outputs/
-*.mp3
-*.mp4
 venv/
