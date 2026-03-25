@@ -12,6 +12,8 @@ The system performs the following steps automatically:
 
 Even if the video generation fails (for example due to insufficient credits), the system continues execution and shows the reason for failure.
 
+**Deployment Link**: https://aiavatar-aqnxcdn6s559nhs4e6tdw5.streamlit.app/
+
 ---
 
 # AI Pipeline Architecture
